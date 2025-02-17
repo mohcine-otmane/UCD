@@ -9,7 +9,7 @@
     <UserControl.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source='/StyleResource.xaml' />
+                <ResourceDictionary Source='../StyleResource.xaml' />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </UserControl.Resources>
@@ -29,17 +29,23 @@
         </Grid.ColumnDefinitions>
 
         <!-- Title -->
-        <!-- Title -->
         <Border Style="{StaticResource TitleStyle}" Grid.Column="1" BorderThickness="0" Background="Transparent"
         CornerRadius="0,0,50,50" Grid.ColumnSpan="2">
             <StackPanel Width="425">
-                <TextBlock Text="Mathematiques"
-                   FontSize="48"
+                <TextBlock Text="Mathematiques (SMA)"
+                   FontSize="38"
                    FontFamily="Segoe Script"
-                   Foreground="#239cbc"
+                   Foreground="#000"
                    Opacity="1"
-                   TextOptions.TextRenderingMode="Aliased"
-                   HorizontalAlignment="Center"/>
+                   TextOptions.TextRenderingMode="Aliased" Width="310" Height="51"
+                   />
+                <TextBlock Text="SMA"
+                   FontSize="24"
+                   FontFamily="Segoe Script"
+                   Foreground="#000"
+                   Opacity="1"
+                   TextOptions.TextRenderingMode="Aliased" Width="60" Height="48" RenderTransformOrigin="0.542,-0.354"
+                   />
             </StackPanel>
         </Border>
 
@@ -54,7 +60,7 @@
         <Button Style="{StaticResource RoundedButton2}" Content="S6" Grid.Column="2" Grid.Row="2"/>
 
         <!-- Back Button -->
-        <Button Style="{StaticResource RoundedButton2}" Width="40" Height="40" Grid.Row="4" Grid.Column="0" Margin="10">
+        <Button Style="{StaticResource RoundedButton2}" Width="40" Height="40" Grid.Row="4" Grid.Column="0" Margin="10" Click="BackButton_Click">
             <Image Source="/assets/back_button.png"/>
         </Button>
 

@@ -9,7 +9,7 @@
     <UserControl.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source='StyleResource.xaml' />
+                <ResourceDictionary Source='../StyleResource.xaml' />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </UserControl.Resources>
@@ -45,7 +45,7 @@
         <Button Style="{StaticResource RoundedButton2}" Content="S6" Grid.Column="2" Grid.Row="2"/>
 
         <!-- Back Button -->
-        <Button Style="{StaticResource RoundedButton2}" Width="40" Height="40" Grid.Row="4" Grid.Column="0" Margin="10">
+        <Button Style="{StaticResource RoundedButton2}" Width="40" Height="40" Grid.Row="4" Grid.Column="0" Margin="10"  Click="BackButton_Click">
             <Image Source="/assets/back_button.png"/>
         </Button>
 

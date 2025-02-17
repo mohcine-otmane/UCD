@@ -24,5 +24,18 @@ namespace UCD.controls
         {
             InitializeComponent();
         }
+
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            Window mainWindow = Window.GetWindow(this);
+            if (mainWindow != null)
+            {
+                StackPanel transform = mainWindow.FindName("MainPanel") as StackPanel;
+                if (transform != null)
+                {
+                    transform.Margin = new Thickness(0, 0, 0, 0);
+                }
+            }
+        }
     }
 }

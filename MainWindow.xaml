@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UCD.controls"
         mc:Ignorable="d" ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
-        Title="MainWindow" Height="500" Width="800">
+        Title="MainWindow" Height="500" Width="810">
 
 
     <Grid>

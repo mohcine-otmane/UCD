@@ -10,7 +10,6 @@
 
   <ItemGroup>
     <None Remove="assets\Background.jpg" />
-    <None Remove="assets\Background_math.jpg" />
     <None Remove="assets\back_button.png" />
     <None Remove="assets\logo.png" />
     <None Remove="assets\MainBefore.jpg" />
@@ -23,7 +22,6 @@
 
   <ItemGroup>
     <Resource Include="assets\Background.jpg" />
-    <Resource Include="assets\Background_math.jpg" />
     <Resource Include="assets\back_button.png" />
     <Resource Include="assets\logo.png" />
     <Resource Include="assets\MainBefore.jpg" />

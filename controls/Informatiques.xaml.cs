@@ -31,10 +31,10 @@ namespace UCD.controls
             Window mainWindow = Window.GetWindow(this);
             if (mainWindow != null)
             {
-                TranslateTransform transform = mainWindow.FindName("MainPanelTransform") as TranslateTransform;
+                StackPanel transform = mainWindow.FindName("MainPanel") as StackPanel;
                 if (transform != null)
                 {
-                    transform.X = 0; // Moves the panel back to the first section
+                    transform.Margin = new Thickness(0, 0, 0, 0);
                 }
             }
         }
