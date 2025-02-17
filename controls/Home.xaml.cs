@@ -12,43 +12,45 @@ namespace UCD.controls
             InitializeComponent();
         }
 
-        private void Button_Click_Math(object sender, RoutedEventArgs e)
-        {
-            Window mainWindow = Window.GetWindow(this);
-            if (mainWindow != null)
-            {
-                StackPanel mainPanel = mainWindow.FindName("MainPanel") as StackPanel;
-                if (mainPanel != null)
-                {
-                    mainPanel.Margin = new Thickness(-800, 0, 0, 0);
-                }
-            }
-        }
+        //private void Button_Click_Math(object sender, RoutedEventArgs e)
+        //{
+        //    Window mainWindow = Window.GetWindow(this);
+        //    if (mainWindow != null)
+        //    {
+        //        StackPanel mainPanel = mainWindow.FindName("MainPanel") as StackPanel;
+        //        if (mainPanel != null)
+        //        {
+        //            mainPanel.Margin = new Thickness(-800, 0, 0, 0);
+        //        }
+        //    }
+        //}
 
         private void Button_Click_Informatiques(object sender, RoutedEventArgs e)
         {
             Window mainWindow = Window.GetWindow(this);
-            if (mainWindow != null)
-            {
-                StackPanel mainPanel = mainWindow.FindName("MainPanel") as StackPanel;
-                if (mainPanel != null)
-                {
-                    mainPanel.Margin = new Thickness(-1600, 0, 0, 0);
-                }
-            }
-        }
 
-        private void Button_Click_Physique(object sender, RoutedEventArgs e)
-        {
-            Window mainWindow = Window.GetWindow(this);
             if (mainWindow != null)
             {
-                StackPanel mainPanel = mainWindow.FindName("MainPanel") as StackPanel;
-                if (mainPanel != null)
+                StackPanel transform = mainWindow.FindName("MainPanel") as StackPanel;
+                if (transform != null)
                 {
-                    mainPanel.Margin = new Thickness(-2400, 0, 0, 0);
+                    transform.Width = 0; // Moves the panel back to the first section
                 }
             }
-        }
+
     }
+
+    //private void Button_Click_Physique(object sender, RoutedEventArgs e)
+    //{
+    //    Window mainWindow = Window.GetWindow(this);
+    //    if (mainWindow != null)
+    //    {
+    //        StackPanel mainPanel = mainWindow.FindName("MainPanel") as StackPanel;
+    //        if (mainPanel != null)
+    //        {
+    //            mainPanel.Margin = new Thickness(-2400, 0, 0, 0);
+    //        }
+    //    }
+    //}
+}
 }

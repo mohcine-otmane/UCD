@@ -24,5 +24,21 @@ namespace UCD.controls
         {
             InitializeComponent();
         }
+
+
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            Window mainWindow = Window.GetWindow(this);
+            if (mainWindow != null)
+            {
+                TranslateTransform transform = mainWindow.FindName("MainPanelTransform") as TranslateTransform;
+                if (transform != null)
+                {
+                    transform.X = 0; // Moves the panel back to the first section
+                }
+            }
+        }
+
+
     }
 }
