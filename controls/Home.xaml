@@ -28,9 +28,8 @@
             <ColumnDefinition Width="200"/>
         </Grid.ColumnDefinitions>
 
-        <Viewbox Width="200" Grid.ColumnSpan="4" HorizontalAlignment="Center">
-            <Image x:Name="logo" Source="/assets/logo.png"/>
-        </Viewbox>
+
+        <Button Content="Profile" Width="50" Height="50" Grid.Column="0"/>
 
 
         <Button Style="{StaticResource RoundedButton}" Content="Math" Grid.Column="0" Grid.Row="1" Click="Button_Click_Math"/>

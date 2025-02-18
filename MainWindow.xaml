@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UCD.controls"
         mc:Ignorable="d" ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
-        Title="MainWindow" Height="500" Width="810">
+        Title="MainWindow" Height="500" Width="810"  WindowStyle="None">
 
 
     <Grid>
@@ -37,6 +37,16 @@
             </Border>
         </StackPanel>
 
+        <!-- Exit Button -->
+        
+        
+        
+        
+        
+        <Button Content="X" Width="30" Height="30" FontSize="20"
+        Background="Transparent" Foreground="#888" BorderThickness="0"
+        HorizontalAlignment="Right" VerticalAlignment="Top"
+        Click="ExitButton_Click" Cursor="Hand"/>
 
 
     </Grid>

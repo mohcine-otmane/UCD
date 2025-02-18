@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0-windows</TargetFramework>
+    <TargetFramework>net9.0-windows7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
@@ -18,6 +18,48 @@
 
   <ItemGroup>
     <Folder Include="assets\icons\" />
+    <Folder Include="controls\geologie\s1\" />
+    <Folder Include="controls\geologie\s2\" />
+    <Folder Include="controls\geologie\s3\" />
+    <Folder Include="controls\geologie\s4\" />
+    <Folder Include="controls\geologie\s5\" />
+    <Folder Include="controls\geologie\s6\" />
+    <Folder Include="controls\biologie\s1\" />
+    <Folder Include="controls\biologie\s2\" />
+    <Folder Include="controls\biologie\s3\" />
+    <Folder Include="controls\biologie\s4\" />
+    <Folder Include="controls\biologie\s5\" />
+    <Folder Include="controls\biologie\s6\" />
+    <Folder Include="controls\physique\s1\" />
+    <Folder Include="controls\physique\s2\" />
+    <Folder Include="controls\physique\s3\" />
+    <Folder Include="controls\physique\s4\" />
+    <Folder Include="controls\physique\s5\" />
+    <Folder Include="controls\physique\s6\" />
+    <Folder Include="controls\chemie\s1\" />
+    <Folder Include="controls\chemie\s2\" />
+    <Folder Include="controls\chemie\s3\" />
+    <Folder Include="controls\chemie\s4\" />
+    <Folder Include="controls\chemie\s5\" />
+    <Folder Include="controls\chemie\s6\" />
+    <Folder Include="controls\info\s1\" />
+    <Folder Include="controls\info\s2\" />
+    <Folder Include="controls\info\s3\" />
+    <Folder Include="controls\info\s4\" />
+    <Folder Include="controls\info\s5\" />
+    <Folder Include="controls\info\s6\" />
+    <Folder Include="controls\math\s6\" />
+    <Folder Include="controls\math\s5\" />
+    <Folder Include="controls\math\s4\" />
+    <Folder Include="controls\math\s3\" />
+    <Folder Include="controls\math\s2\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.3065.39" />
+    <PackageReference Include="Microsoft.Windows.Compatibility" Version="9.0.2" />
+    <PackageReference Include="PdfiumViewer" Version="2.13.0" />
+    <PackageReference Include="PdfiumViewer.Native.x86_64.v8-xfa" Version="2018.4.8.256" />
   </ItemGroup>
 
   <ItemGroup>

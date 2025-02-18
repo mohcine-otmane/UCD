@@ -18,7 +18,7 @@
 
                 <!-- Title -->
                 <TextBlock Text="Campus Login" FontSize="28" FontWeight="Bold" Foreground="#333"
-                           HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                           HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,87,0"/>
 
                 <!-- Choose Field Label -->
                 <TextBlock Text="Choose your field:" FontSize="16" Foreground="#555"
