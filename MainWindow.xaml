@@ -8,6 +8,15 @@
         Title="MainWindow" Height="500" Width="810"  WindowStyle="None">
 
 
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source='StyleResource.xaml' />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
@@ -38,12 +47,7 @@
         </StackPanel>
 
         <!-- Exit Button -->
-        
-        
-        
-        
-        
-        <Button Content="X" Width="30" Height="30" FontSize="20"
+        <Button Style="{StaticResource RoundedButton}" Content="x" Width="30" Height="30" FontSize="20"
         Background="Transparent" Foreground="#888" BorderThickness="0"
         HorizontalAlignment="Right" VerticalAlignment="Top"
         Click="ExitButton_Click" Cursor="Hand"/>

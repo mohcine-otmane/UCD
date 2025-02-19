@@ -55,9 +55,6 @@
             <VisualBrush Stretch="UniformToFill">
                 <VisualBrush.Visual>
                     <Image Source="/assets/Background.jpg">
-                        <Image.BitmapEffect>
-                            <BlurBitmapEffect KernelType="Gaussian" Radius="5"/>
-                        </Image.BitmapEffect>
                     </Image>
                 </VisualBrush.Visual>
             </VisualBrush>
