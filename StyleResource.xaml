@@ -22,7 +22,7 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="Button">
-                    <Border x:Name="border" CornerRadius="30" Background="{TemplateBinding Background}">
+                    <Border x:Name="border" CornerRadius="15" Background="{TemplateBinding Background}">
                         <Grid>
                             <Rectangle x:Name="shine" Opacity="0" Fill="White" RadiusX="30" RadiusY="30" RenderTransformOrigin="0.5,0.5" Width="100" Height="60">
                                 <Rectangle.RenderTransform>
@@ -43,12 +43,6 @@
                             <Setter TargetName="border" Property="RenderTransform">
                                 <Setter.Value>
                                     <ScaleTransform ScaleX="1.05" ScaleY="1.05"/>
-                                </Setter.Value>
-                            </Setter>
-                            <Setter TargetName="shine" Property="Opacity" Value="0.5"/>
-                            <Setter TargetName="shine" Property="RenderTransform">
-                                <Setter.Value>
-                                    <TranslateTransform X="120"/>
                                 </Setter.Value>
                             </Setter>
                         </Trigger>
